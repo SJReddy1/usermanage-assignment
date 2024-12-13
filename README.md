@@ -26,6 +26,7 @@ Follow these steps to get the project up and running:
    ```bash
    git clone https://github.com/yourusername/user-management-app.git
    cd user-management-app
+   npm install
 
 # Vercel-host link
 [https://usermanage-assignment.vercel.app/login](https://usermanage-assignment-git-main-soreddy-jitendra-reddys-projects.vercel.app/login)
