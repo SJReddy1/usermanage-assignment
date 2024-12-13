@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-form {
+    background: #fff;
+    padding: 2rem; /* Consistent padding for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .auth-form h1 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 0.8rem; /* Ensure uniform padding inside the input fields */
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  .auth-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .auth-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .auth-form .error {
+    color: red;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .user-list {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .user-list-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .user-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .user-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .user-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .pagination-controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .pagination-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls span {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Existing Styles */
+
+/* Edit Form */
+.edit-form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .edit-form-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-form-container button {
+    padding: 0.8rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .edit-form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Success and Error Messages */
+  .message.success {
+    color: green;
+    font-size: 1.2rem;
+  }
+  
+  .message.error {
+    color: red;
+    font-size: 1.2rem;
+  }
+  
+  /* User Card Buttons */
+  .user-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .user-card button:hover {
+    background-color: #218838;
+  }
+  
+  .user-card button:active {
+    background-color: #1e7e34;
+  }
+  
+  .user-card button:nth-of-type(2) {
+    background-color: #dc3545;
+  }
+  
+  .user-card button:nth-of-type(2):hover {
+    background-color: #c82333;
+  }
+  
+  /* Search Bar Container */
+.search-bar {
+  width: 100%;
+  max-width: 500px; /* Set a max width for the search bar */
+  margin: 20px auto; /* Center the search bar */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Search Input */
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+/* Focus State for Search Input */
+.search-bar input:focus {
+  outline: none;
+  border-color: #4caf50; /* Green border on focus */
+}
+
+/* Placeholder Text Style */
+.search-bar input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.logout-btn {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
