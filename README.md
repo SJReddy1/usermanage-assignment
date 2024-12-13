@@ -1,3 +1,32 @@
+# User Management App
+
+This is a React-based user management application that allows you to view, search, edit, and delete users fetched from the ReqRes API. It also includes pagination and a search bar to filter users based on name or email. The application also provides a logout button that clears authentication data and redirects the user to the login page.
+
+## Features
+
+- View a list of users with pagination.
+- Search users by name or email.
+- Edit user details (first name, last name, email).
+- Delete users.
+- Logout button to clear authentication data.
+
+## Technologies Used
+
+- React.js
+- Axios (for API requests)
+- React Router (for navigation)
+- CSS (for styling)
+
+## Installation
+
+Follow these steps to get the project up and running:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/user-management-app.git
+   cd user-management-app
+
 # Vercel-host link
 [https://usermanage-assignment.vercel.app/login](https://usermanage-assignment-git-main-soreddy-jitendra-reddys-projects.vercel.app/login)
 
